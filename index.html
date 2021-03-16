@@ -63,6 +63,9 @@
 div.homepage-menu-row {
   display: flex;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 div.homepage-menu-row .img-circle-cropper {
@@ -112,10 +115,17 @@ div.menu-item:hover a {
   color: #00aeef;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 800px) {
   div.homepage-menu-row .img-circle-cropper {
     width: 100px;
     height: 100px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  div.homepage-menu-row .img-circle-cropper {
+    width: 80px;
+    height: 80px;
   }
 }
 
