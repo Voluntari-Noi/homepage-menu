@@ -66,6 +66,7 @@ div.homepage-menu-row {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 div.homepage-menu-row .img-circle-cropper {
@@ -127,6 +128,17 @@ div.menu-item:hover a {
   div.homepage-menu-row .img-circle-cropper {
     width: 80px;
     height: 80px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  div.homepage-menu-row .img-circle-cropper {
+    width: 60px;
+    height: 60px;
+  }
+  div.text {
+    font-size: 14px !important;
+    margin-top: 5px !important;
   }
 }
 
